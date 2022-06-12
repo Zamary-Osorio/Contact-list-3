@@ -14,3 +14,11 @@ console.log(contactos);
 contactos.splice( 1, 1);
 const eliminados = contactos.splice(0, 1);
 console.log("Eliminado: ", eliminados);
+
+const borrados = contactos.splice(3, 1, {
+    id: 6,
+    nombreCompleto: "manyu osorio",
+    telefono: "3154578454",
+});
+
+console.log("Eliminado: ", borrados);
